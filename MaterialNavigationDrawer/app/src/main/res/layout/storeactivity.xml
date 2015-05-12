@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#730202"
+    android:text="ShopName"
+    android:id="@+id/shopname"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:textColor="#ffffff"
+    android:textAllCaps="true"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        </LinearLayout>
+    
+    <Button
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:text="View Promotions "
+        android:id="@+id/button6"
+        android:textColor="#e62f17"
+        android:layout_gravity="bottom|center"
+        android:paddingTop="2px"
+        android:capitalize="characters"
+        android:background="@drawable/roundedbutton"
+        android:layout_marginBottom="2dp" />
+
+
+
+    <Button
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:text="View Map "
+        android:id="@+id/button5"
+        android:textColor="#e62f17"
+        android:layout_gravity="bottom|center"
+        android:paddingTop="2px"
+        android:capitalize="characters"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/roundedbutton"/>
+        <!--android:background="@drawable/roundedbutton"-->
+
+    <Button
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:text="Search Product"
+        android:id="@+id/button4"
+        android:textColor="#e62f17"
+        android:layout_gravity="bottom|center"
+        android:paddingTop="2px"
+        android:capitalize="characters"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/roundedbutton"/>
+        <!--android:background="@drawable/roundedbutton"-->
+
+
+   </LinearLayout>
+</LinearLayout>

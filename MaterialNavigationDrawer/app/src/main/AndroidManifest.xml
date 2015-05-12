@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.neokree.example">
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCuV10c9o5_3fjmqhz2rYi_akZNWNMj0uA" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.shoppin.splash.Register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.shoppin.splash.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".mockedActivity.ProductActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".gps.MapsActivity"
+            android:label="Map" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mockedActivity.CheckIn"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".mockedActivity.CheckIn2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".mockedActivity.Shopingdialog"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <activity
+            android:name="com.checkin.Nfc"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.checkin.Nfc2"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.checkin.QrCode"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.checkin.QrCode2"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mockedActivity.Asilemap"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".mockedActivity.Asilemap2"
+        android:label="@string/app_name"
+        android:configChanges="keyboardHidden|orientation">
+        <intent-filter>
+
+            <category
+                android:name="android.intent.category.Default" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".mockedFragments.SearchProducts"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+
+                <category
+                    android:name="android.intent.category.Default" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.shoppin.splash.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".mockedActivity.Settings" />
+        <activity android:name=".mockedActivity.Profile" />
+        <activity android:name=".mockedActivity.ChangeAddress" />
+        <activity android:name=".mockedActivity.ChangeGender" />
+        <activity android:name=".mockedActivity.ChangePhone" />
+
+
+        <activity android:name=".light.MockedAccount" android:theme="@style/MockedAccountLight" />
+        <activity android:name=".test.Test" android:theme="@style/TestTheme" />
+        <service android:name="com.login.helper.IntentUI"/>
+        <service android:name="com.login.helper.ProfileUi"/>
+        <service android:name="com.login.helper.CrawlerUi"/>
+        <service android:name="com.login.helper.ShoppingUi"/>
+        <service android:name="com.login.helper.SearchProductUi"/>
+        <service android:name="com.login.helper.HistoryUi"/>
+    </application>
+
+</manifest>
